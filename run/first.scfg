@@ -1,0 +1,16 @@
+(
+    (a . b)
+    (c . d)
+    (
+        "hey"
+        "testing \"complex\" strings"
+        g
+        (h . i)
+    )
+    j
+    k
+    (
+        (hey . 15)
+        (test . 25)
+    )
+)

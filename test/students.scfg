@@ -1,0 +1,37 @@
+(
+    (var myGroup "ИКБО-28-21")
+    (var myName "ИКБО-28-21")
+    (var myAge 19)
+
+    (func record (group age name) ( (age . $age) (group . $group) (name . $name) ))
+
+    (groups .
+        (
+            ИКБО-[1..28]-21
+        )
+    )
+    (students .
+        (
+            (var commonAge 18)
+            (
+                (age . 19)
+                (group . "ИКБО-4-21")
+                (name . "Иванов И.И.")
+            )
+            (
+                (age . $commonAge)
+                (group . "ИКБО-5-21")
+                (name . "Петров П.П.")
+            )
+            (
+                (age . $commonAge)
+                (group . "ИКБО-5-21")
+                (name . "Сидоров С.С.")
+            )
+            (
+
+            )
+        )
+    )
+    (subject . "Конфигурационное управление")
+)
