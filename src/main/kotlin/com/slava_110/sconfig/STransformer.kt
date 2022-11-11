@@ -105,3 +105,5 @@ class SFunction(val params: List<String>, val expression: SConfigParser.Expressi
     fun invoke(ctx: SContext, arguments: List<JsonElement>): JsonElement =
         expression.accept(SFunctionContext(ctx, params.withIndex().associate { (i, name) -> name to arguments[i] }))
 }
+
+class SException(msg: String): RuntimeException(msg)
