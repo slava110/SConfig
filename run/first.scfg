@@ -1,16 +1,21 @@
 (
+    (var test 15)
+    (var hey 23)
+    (func record (a b) (("a" . a) ("b" . b)))
     (a . b)
     (c . d)
     (
+        (var i "Wow")
         "hey"
         "testing \"complex\" strings"
         g
-        (h . i)
+        (h . $i)
+        (recTest . (@record ("first" "sec")))
     )
     j
     k
     (
-        (hey . 15)
+        (hey . $test)
         (test . 25)
     )
 )

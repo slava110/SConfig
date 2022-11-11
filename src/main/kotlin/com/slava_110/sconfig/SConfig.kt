@@ -26,6 +26,6 @@ object SConfig {
 
         val parser = SConfigParser(tokenStream)
 
-        return parser.config().accept(STransformerConfig())
+        return parser.config().accept(STransformer())
     }
 }
